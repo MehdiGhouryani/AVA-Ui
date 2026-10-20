@@ -1,0 +1,192 @@
+{
+  "_meta": {
+    "language": "fa",
+    "direction": "rtl",
+    "status": "DRAFT copy. 'screenshot' = visible in approved screenshots (typos fixed); 'repo' = microcopy example from spec; 'proposed' = written by supervisor. None is legally/pedagogically approved.",
+    "rules": "No mention of parents/guardians anywhere. Digits shown as Persian numerals. Use zero-width non-joiner (U+200C) in compounds."
+  },
+  "brand": {
+    "name": {
+      "fa": "آوا",
+      "source": "repo"
+    },
+    "tagline": {
+      "fa": "دنیای قصه‌های توی باغ کتاب",
+      "source": "screenshot"
+    }
+  },
+  "splash": {
+    "loading": {
+      "fa": "داریم کتابت را باز می‌کنیم",
+      "source": "repo"
+    },
+    "a11yLoading": {
+      "fa": "در حال آماده‌سازی",
+      "source": "proposed"
+    }
+  },
+  "onboarding": {
+    "next": {
+      "fa": "ادامه",
+      "source": "screenshot"
+    },
+    "skip": {
+      "fa": "رد کردن",
+      "source": "screenshot"
+    },
+    "step1": {
+      "title": {
+        "fa": "به دنیای کتاب‌های جادویی قدم بگذار!",
+        "source": "screenshot"
+      },
+      "body": {
+        "fa": "اینجا با صداها، تصویرها و قصه‌ها یاد می‌گیری و رشد می‌کنی.",
+        "source": "screenshot"
+      }
+    },
+    "step2": {
+      "title": {
+        "fa": "دوست‌های مهربونت منتظرن!",
+        "source": "screenshot"
+      },
+      "body": {
+        "fa": "با هم یاد می‌گیریم، بازی می‌کنیم و دنیای قشنگ فارسی رو کشف می‌کنیم.",
+        "source": "screenshot"
+      }
+    },
+    "a11yDots": {
+      "fa": "صفحه {current} از {total}",
+      "source": "proposed"
+    }
+  },
+  "phone": {
+    "title": {
+      "fa": "ورود یا ساخت حساب",
+      "source": "screenshot"
+    },
+    "label": {
+      "fa": "شمارهٔ موبایل",
+      "source": "screenshot"
+    },
+    "placeholder": {
+      "fa": "۰۹۱۲ ۳۴۵ ۶۷۸۹",
+      "source": "proposed"
+    },
+    "errorInvalid": {
+      "fa": "شماره درست نیست",
+      "source": "screenshot"
+    },
+    "consent": {
+      "fa": "حریم خصوصی و قوانین را می‌پذیرم",
+      "source": "screenshot"
+    },
+    "consentHint": {
+      "fa": "برای ادامه، تیک قوانین را بزن",
+      "source": "proposed"
+    },
+    "linkPrivacy": {
+      "fa": "حریم خصوصی",
+      "source": "screenshot"
+    },
+    "linkTerms": {
+      "fa": "قوانین و مقررات",
+      "source": "screenshot"
+    },
+    "cta": {
+      "fa": "دریافت کد",
+      "source": "screenshot"
+    },
+    "sending": {
+      "fa": "در حال ارسال…",
+      "source": "proposed"
+    },
+    "providerError": {
+      "fa": "کد فرستاده نشد. دوباره تلاش کن.",
+      "source": "proposed"
+    },
+    "offline": {
+      "fa": "به اینترنت وصل نیستید. اتصال را بررسی کنید.",
+      "source": "screenshot"
+    },
+    "legalPlaceholderPrivacy": {
+      "fa": "متن حریم خصوصی به‌زودی اضافه می‌شود.",
+      "source": "proposed"
+    },
+    "legalPlaceholderTerms": {
+      "fa": "متن قوانین و مقررات به‌زودی اضافه می‌شود.",
+      "source": "proposed"
+    },
+    "close": {
+      "fa": "بستن",
+      "source": "proposed"
+    }
+  },
+  "otp": {
+    "title": {
+      "fa": "کد تأیید را وارد کنید",
+      "source": "screenshot"
+    },
+    "subtitle": {
+      "fa": "کد ۶ رقمی به شمارهٔ {phone} ارسال شد",
+      "source": "screenshot"
+    },
+    "editPhone": {
+      "fa": "ویرایش شماره",
+      "source": "screenshot"
+    },
+    "resendIn": {
+      "fa": "ارسال مجدد کد تا {time}",
+      "source": "screenshot"
+    },
+    "resend": {
+      "fa": "ارسال مجدد کد",
+      "source": "proposed"
+    },
+    "resent": {
+      "fa": "کد تازه فرستاده شد",
+      "source": "proposed"
+    },
+    "wrong": {
+      "fa": "کد درست نیست، دوباره تلاش کنید",
+      "source": "screenshot"
+    },
+    "expired": {
+      "fa": "کد منقضی شد. یک کد تازه بگیر.",
+      "source": "proposed"
+    },
+    "locked": {
+      "fa": "چند بار اشتباه شد. کمی بعد دوباره امتحان کن.",
+      "source": "proposed"
+    },
+    "verifying": {
+      "fa": "در حال بررسی…",
+      "source": "proposed"
+    },
+    "success": {
+      "fa": "تأیید شد",
+      "source": "proposed"
+    },
+    "cta": {
+      "fa": "ادامه",
+      "source": "screenshot"
+    },
+    "a11yBox": {
+      "fa": "رقم {index} از ۶",
+      "source": "proposed"
+    }
+  },
+  "home": {
+    "title": {
+      "fa": "به باغ آوا خوش آمدی!",
+      "source": "proposed"
+    },
+    "placeholderNote": {
+      "fa": "(صفحهٔ موقت) ادامهٔ ماجراجویی در مرحلهٔ بعد ساخته می‌شود.",
+      "source": "proposed"
+    },
+    "restart": {
+      "fa": "شروع دوباره (فقط برای آزمایش)",
+      "source": "proposed"
+    }
+  }
+}
