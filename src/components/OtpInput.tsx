@@ -44,11 +44,12 @@ export const OtpInput: React.FC<OtpInputProps> = ({
   // Active index for caret: box index 0 to 5, or -1 when full
   const activeIndex = value.length < 6 ? value.length : -1;
 
-  // Visual order: from physical left to physical right, the boxes correspond
-  // to indices [5, 4, 3, 2, 1, 0].
-  // Box index 0 is at the physical right-most position.
-  // Box index 5 is at the physical left-most position.
-  const visualIndices = [5, 4, 3, 2, 1, 0];
+  // Box indices in natural RTL order:
+  // In a dir="rtl" flex container, child 0 is rendered at the physical RIGHT.
+  // Child 5 is rendered at the physical LEFT.
+  // Digit 1 (value[0]) goes into child 0 (the RIGHT-most box).
+  // Each next digit moves one box to the LEFT.
+  const boxIndices = [0, 1, 2, 3, 4, 5];
 
   return (
     <div
@@ -63,7 +64,7 @@ export const OtpInput: React.FC<OtpInputProps> = ({
       }}
       className={status === 'wrong' ? 'otp-shake' : ''}
     >
-      {/* Hidden input driving the visual boxes (LTR internally) */}
+      {/* Hidden input driving the visual boxes */}
       <input
         ref={hiddenInputRef}
         type="text"
@@ -91,19 +92,20 @@ export const OtpInput: React.FC<OtpInputProps> = ({
         aria-label={t('otp.title')}
       />
 
-      {/* 6 visual boxes laid out left-to-right (displaying indices 5 to 0) */}
+      {/* 6 visual boxes in RTL order: child 0 is on the RIGHT */}
       <div
-        dir="ltr"
+        dir="rtl"
         style={{
           display: 'flex',
           flexDirection: 'row',
+          direction: 'rtl',
           alignItems: 'center',
           justifyContent: 'center',
           gap: 'clamp(6px, 2.5vw, 10px)',
           width: '100%'
         }}
       >
-        {visualIndices.map((index) => {
+        {boxIndices.map((index) => {
           const digit = value[index];
           const hasDigit = digit !== undefined;
           const isActive = isFocused && index === activeIndex && !disabled && status !== 'locked';

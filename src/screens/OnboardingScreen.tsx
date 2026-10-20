@@ -269,25 +269,31 @@ export const OnboardingScreen: React.FC<OnboardingScreenProps> = ({
       ) : (
         /* STEP 2: Characters on Onboarding 2 */
         <>
-          {/* F. Squirrel: behind-center, height min(173px, 20.5dvh), bottom calc(11.5% + 80px + 9dvh) */}
+          {/* F. Squirrel: behind, height min(173px, 20.5dvh), bottom calc(11.5% + 80px + 9dvh) */}
           <div
             style={{
               position: 'absolute',
-              left: '50%',
+              left: 'calc(50% + 32px)',
               transform: 'translateX(-50%)',
               bottom: 'calc(11.5% + 80px + 9dvh)',
               height: 'min(173px, 20.5dvh)',
               width: 'auto',
               zIndex: 1,
-              pointerEvents: 'none',
-              animation: isReducedMotion ? 'none' : 'popIn 400ms ease forwards'
+              pointerEvents: 'none'
             }}
           >
-            <img
-              src={asset('char.friend.squirrel').src}
-              alt=""
-              style={{ height: '100%', width: 'auto', display: 'block' }}
-            />
+            <div
+              style={{
+                height: '100%',
+                animation: isReducedMotion ? 'none' : 'popIn 400ms ease forwards'
+              }}
+            >
+              <img
+                src={asset('char.friend.squirrel').src}
+                alt=""
+                style={{ height: '100%', width: 'auto', display: 'block' }}
+              />
+            </div>
           </div>
 
           {/* F. Bunny: physical left 1%, height min(181px, 21.5dvh), bottom calc(11.5% + 80px) */}
@@ -334,28 +340,34 @@ export const OnboardingScreen: React.FC<OnboardingScreenProps> = ({
           <div
             style={{
               position: 'absolute',
-              left: 'calc(50% - 24px)',
+              left: 'calc(50% - 30px)',
               transform: 'translateX(-50%)',
               bottom: 'calc(11.5% + 80px)',
               height: 'min(231px, 27.4dvh)',
               width: 'auto',
               zIndex: 3,
-              pointerEvents: 'none',
-              animation: isReducedMotion ? 'none' : 'popIn 400ms ease 240ms forwards'
+              pointerEvents: 'none'
             }}
           >
             <div
               style={{
                 height: '100%',
-                transformOrigin: 'bottom center',
-                animation: isReducedMotion ? 'none' : 'avaWave 2.4s ease-in-out infinite'
+                animation: isReducedMotion ? 'none' : 'popIn 400ms ease 240ms forwards'
               }}
             >
-              <img
-                src={asset('char.ava.wave_book').src}
-                alt="آوا و دوستان"
-                style={{ height: '100%', width: 'auto', display: 'block' }}
-              />
+              <div
+                style={{
+                  height: '100%',
+                  transformOrigin: 'bottom center',
+                  animation: isReducedMotion ? 'none' : 'avaWave 2.4s ease-in-out infinite'
+                }}
+              >
+                <img
+                  src={asset('char.ava.wave_book').src}
+                  alt="آوا و دوستان"
+                  style={{ height: '100%', width: 'auto', display: 'block' }}
+                />
+              </div>
             </div>
           </div>
         </>
